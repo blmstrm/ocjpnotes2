@@ -8,14 +8,18 @@ Using this book: http://www.amazon.com/Certified-Professional-Programmer-1Z0-804
 Chapter 3 & 4
 -------------
 
-Notes taken:
+otes taken:
+
 When adding Strings and primitive types:
+
 "Ten" +10+10+10 turns into "Ten101010" due to the fact that "Ten" + 10 evaluates to a String variable "Ten10", which results in "Ten10"+10 also evaluating to a String variable etc.
 
 Method overriding:
+
 You can only provide a less restrictive  or same-access modifier when overrind a method.
 
 Defining enum elements:
+
 Enum elements  need to be defined first before any other attribute in an enum class.
 
 To practice class design I am implementing a generic Tree with the purpose to cover:
