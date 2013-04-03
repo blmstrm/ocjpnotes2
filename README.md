@@ -18,4 +18,5 @@ To practice class design I am implementing a generic Tree with the purpose to co
   * Interfaces
   * Inheritance
   * Basic OO class design
+
 Link: https://github.com/blmstrm/genericTree
