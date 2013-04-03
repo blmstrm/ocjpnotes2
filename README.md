@@ -13,7 +13,7 @@ Chapter 3 & 4
 You can only provide a less restrictive  or same-access modifier when overrind a method.
 #####Defining enum elements:
 Enum elements  need to be defined first before any other attribute in an enum class.
-###Coding:
+###Code:
 To practice class design I am implementing a generic Tree with the purpose to cover:
   * Interfaces
   * Inheritance
