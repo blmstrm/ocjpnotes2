@@ -20,3 +20,10 @@ To practice class design I am implementing a generic Tree with the purpose to co
   * Basic OO class design
 
 Link: https://github.com/blmstrm/genericTree
+
+Chapter 3 & 4
+-------------
+###Notes:
+
+###Code:
+Implemented an example of the factory design pattern.
