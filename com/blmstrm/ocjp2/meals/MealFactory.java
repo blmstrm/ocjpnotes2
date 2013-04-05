@@ -13,7 +13,7 @@ public class MealFactory {
 		int hour = calendar.get(Calendar.HOUR_OF_DAY);
 
 		if(hour >= 0 && hour <= 10){
-			return new BreakFast();
+			return new Breakfast();
 		}else if(hour < 14){
 			return new Lunch();
 		}

@@ -1,14 +1,21 @@
 package com.blmstrm.ocjp2;
 import com.blmstrm.ocjp2.meals.Meal;
 import com.blmstrm.ocjp2.meals.MealFactory;
+import com.blmstrm.ocjp2.plates.EverydayPlate;
 
 public class TestMealFactory {
 	public static void main(String args[]){
-		
+
 		MealFactory myMealFactory = new MealFactory();
 		Meal cookedMeal = myMealFactory.cookAMeal();
-		
+
 		System.out.println(cookedMeal.getType()+" is ready!");
-	
+
+		EverydayPlate plate =	EverydayPlate.INSTANCE;
+
+		plate.plateFood(cookedMeal);
+
+		System.out.println(plate);
+
 	}
 }
