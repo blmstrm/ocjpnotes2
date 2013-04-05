@@ -21,7 +21,7 @@ To practice class design I am implementing a generic Tree with the purpose to co
 
 Link: https://github.com/blmstrm/genericTree
 
-Chapter 3 & 4
+Chapter 5
 -------------
 ###Notes:
 

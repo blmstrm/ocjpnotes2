@@ -1,7 +1,6 @@
 package com.blmstrm.ocjp2.meals;
 
 public abstract class Meal {
-	
 	{
 		this.cook();
 	}
