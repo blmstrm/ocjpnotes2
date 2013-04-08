@@ -14,9 +14,10 @@ public class MealFactory {
 
 		if(hour >= 0 && hour <= 10){
 			return new Breakfast();
-		}else if(hour < 14){
+		}else if(hour <= 15){
 			return new Lunch();
 		}
+
 		return new Dinner();
 	}
 }
