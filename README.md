@@ -10,7 +10,7 @@ Chapter 3 & 4
 #####Adding Strings and primitive types:
 ``"Ten" +10+10+10`` turns into ``"Ten101010"`` due to the fact that ``"Ten" + 10`` evaluates to a String variable ``"Ten10"``, which results in ``"Ten10"+10`` also evaluating to a String variable etc.
 #####Method overriding:
-You can only provide a less restrictive  or same-access modifier when overrind a method.
+You can only provide a less restrictive  or same-access modifier when overriding a method.
 #####Defining enum elements:
 Enum elements  need to be defined first before any other attribute in an enum class.
 ###Code:
@@ -24,7 +24,13 @@ Link: https://github.com/blmstrm/genericTree
 Chapter 5
 -------------
 ###Notes:
-
+No notes here.
 ###Code:
 * Implemented an example of the factory design pattern.
 * Implemented an example of a DOA design pattern.
+
+Chapter 6
+-------------
+###Notes:
+Generics where introduces in Java to ensure type safety.
+
