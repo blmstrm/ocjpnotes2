@@ -26,4 +26,5 @@ Chapter 5
 ###Notes:
 
 ###Code:
-Implemented an example of the factory design pattern.
+* Implemented an example of the factory design pattern.
+* Implemented an example of a DOA design pattern.
