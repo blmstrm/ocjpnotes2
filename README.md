@@ -10,8 +10,7 @@ Chapter 3 & 4
 #####Adding Strings and primitive types:
 ``"Ten" +10+10+10`` turns into ``"Ten101010"`` due to the fact that ``"Ten" + 10`` evaluates to a String variable ``"Ten10"``, which results in ``"Ten10"+10`` also evaluating to a String variable etc.
 #####Method overriding:
-You can only provide a less restrictive  or same-access modifier when overriding a method.
-#####Defining enum elements:
+You can only provide a less restrictive  or same-access modifier when overriding a method.  #####Defining enum elements:
 Enum elements  need to be defined first before any other attribute in an enum class.
 ###Code:
 To practice class design I am implementing a generic Tree with the purpose to cover:
@@ -37,3 +36,7 @@ Generics where introduces in Java to ensure type safety.
 Bounded wildcards, ``<? extends X>``, makes sure that every type ``?`` must extend ``X``. This works with ``super`` as well,``<? super X>``, where ``?`` is a super class of ``X``.
 
 It is not possible to have generic extension classes.
+
+
+###Code:
+* Implemented a navigableMap example. 
