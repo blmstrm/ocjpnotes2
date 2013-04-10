@@ -4,6 +4,7 @@ import com.blmstrm.ocjp2.meals.Meal;
 import com.blmstrm.ocjp2.meals.MealFactory;
 import com.blmstrm.ocjp2.plates.Plate;
 import com.blmstrm.ocjp2.utensils.Fork;
+import com.blmstrm.ocjp2.utensils.Knife;
 
 public class TestMealFactory {
 	public static void main(String args[]){
@@ -41,8 +42,13 @@ public class TestMealFactory {
 		Fork fork = new Fork();
 		fork.setBrand("Gucchi");
 		
+		Knife knife = new Knife();
+		knife.setBrand("Dolce & Gabbana");
+		
 		picknickBasket.addKitchenWare("Kalles plate", dirtyPlate);
 		picknickBasket.addKitchenWare("Kalles fork", fork);
+		picknickBasket.addKitchenWare("Drogbas knife", knife);
+		
 		
 		for(KitchenWare k : picknickBasket.getEveryWareFromTo("K", "L")){
 			System.out.println(k);
