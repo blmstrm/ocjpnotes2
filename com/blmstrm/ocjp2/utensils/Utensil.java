@@ -24,5 +24,8 @@ public abstract class Utensil{
 		this.dirty = dirty;
 	}
 
+	public String toString(){
+		return "This is a utensil from "+this.brand;
+	}
 	
 }

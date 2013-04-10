@@ -3,6 +3,7 @@ import com.blmstrm.ocjp2.cupboard.Cupboard;
 import com.blmstrm.ocjp2.meals.Meal;
 import com.blmstrm.ocjp2.meals.MealFactory;
 import com.blmstrm.ocjp2.plates.Plate;
+import com.blmstrm.ocjp2.utensils.Fork;
 
 public class TestMealFactory {
 	public static void main(String args[]){
@@ -30,8 +31,22 @@ public class TestMealFactory {
 		System.out.println(dirtyPlate);
 		
 		dirtyPlate.clean();
-		
+				
 		System.out.println(dirtyPlate);
 
+		dirtyPlate.plateFood(cookedMeal);
+		
+		Basket picknickBasket = new Basket();
+		
+		Fork fork = new Fork();
+		fork.setBrand("Gucchi");
+		
+		picknickBasket.addKitchenWare("Kalles plate", dirtyPlate);
+		picknickBasket.addKitchenWare("Kalles fork", fork);
+		
+		for(KitchenWare k : picknickBasket.getEveryWareFromTo("K", "L")){
+			System.out.println(k);
+		}
+		
 	}
 }
