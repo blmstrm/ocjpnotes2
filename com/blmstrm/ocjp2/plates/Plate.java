@@ -1,13 +1,20 @@
 package com.blmstrm.ocjp2.plates;
 
-import com.blmstrm.ocjp2.meals.Meal;
+import java.util.Calendar;
 
-public enum Plate{
+import com.blmstrm.ocjp2.KitchenWare;
+import com.blmstrm.ocjp2.meals.Meal;
+import com.google.code.morphia.annotations.Embedded;
+
+@Embedded
+public enum Plate implements KitchenWare{
 
 	BREAKFAST,LUNCH,DINNER;
 
 	private Meal plateContent;
 	private boolean dirty;
+	private static Calendar calendar = Calendar.getInstance();
+
 
 	public void plateFood(Meal food){
 		this.plateContent = food;
@@ -34,6 +41,22 @@ public enum Plate{
 			return "There is "+this.plateContent.getType()+" on the plate.";
 		}
 		return "There is nothing on the plate.";
+	}
+
+	@Override
+	public void use() {
+		/* Not used at the moment*/
+	}
+
+	public static Plate create(){
+		int hour = calendar.get(Calendar.HOUR_OF_DAY);
+
+		if(hour >= 0 && hour <= 10){
+			return BREAKFAST;
+		}else if(hour <= 15){
+			return LUNCH;
+		}
+		return DINNER;
 	}
 
 }

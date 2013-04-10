@@ -7,28 +7,31 @@ import com.blmstrm.ocjp2.plates.Plate;
 public class TestMealFactory {
 	public static void main(String args[]){
 
+
 		MealFactory myMealFactory = new MealFactory();
 		Cupboard kitchenCupboard = new Cupboard();
-		
+
+		kitchenCupboard.clearOut();
+
 		Meal cookedMeal = myMealFactory.cookAMeal();
 
 		System.out.println(cookedMeal.getType()+" is ready!");
 
-		Plate plate = Plate.BREAKFAST;
-		
+		Plate plate = Plate.create();
+			
 		plate.plateFood(cookedMeal);
 
 		System.out.println(plate);
-		
-		kitchenCupboard.putAwayPlate(plate);
-		
-		Plate dirtyPlate = kitchenCupboard.getPlate();
+
+		kitchenCupboard.putAway(plate);
+
+		Plate dirtyPlate = (Plate) kitchenCupboard.get();
 		
 		System.out.println(dirtyPlate);
 		
 		dirtyPlate.clean();
-			
+		
 		System.out.println(dirtyPlate);
-			
+
 	}
 }

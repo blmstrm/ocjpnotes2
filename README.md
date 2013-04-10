@@ -34,6 +34,6 @@ Chapter 6
 ###Notes:
 Generics where introduces in Java to ensure type safety.
 
-Bounded wildcards, ``<? extends X>``, makes sure that every type ? must extend X. This works with ``super`` as well, ``<? super X>``, where ? is a super class of X.
+Bounded wildcards, ``<? extends X>``, makes sure that every type ``?`` must extend ``X``. This works with ``super`` as well,``<? super X>``, where ``?`` is a super class of ``X``.
 
 It is not possible to have generic extension classes.
