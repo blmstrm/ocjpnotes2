@@ -1,53 +1,76 @@
 package com.blmstrm.ocjp2;
 
+import java.io.BufferedWriter;
 import java.io.Console;
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class PicnicConversation {
 
 	private Talker currentTalker;
 
 	private enum Talker {
-		DROGBA,ANKA
+		Drogba,Anka
 	}
 
 	private Console console;
+	private BufferedWriter writer;
 
 	{
 
-		console = System.console();
-		console.printf("Opening file\n");
-		this.currentTalker = Talker.DROGBA;
-		/*Open file conversation*/
+		this.console = System.console();
+		this.currentTalker = Talker.Drogba;
+		try {
+			this.writer = new BufferedWriter(new FileWriter("conversation"));
+		} catch (IOException e) {
+			System.exit(1);
+		}
 
 	}
 
 	public static void main(String args[]){
 
 		PicnicConversation convo = new PicnicConversation();
-		convo.talk();
+		try {
+			convo.talk();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 
-	private void talk(){
+	private void talk() throws IOException{
 		String line = "";
 
 		while(true){
 			switch(currentTalker){
-			case DROGBA:
+			case Drogba:
 				console.printf("Drogba: ");
 				line +="Drogba: ";
-				currentTalker=Talker.ANKA;
+
 				break;
-			case ANKA:
+			case Anka:
 				console.printf("Anka: ");
 				line +="Anka: ";
-				currentTalker=Talker.DROGBA;
+	
 				break;
 			}
-		
+
 			line += console.readLine();
+
+			if(line.compareTo(currentTalker+": \\exit")==0){
+				writer.close();
+				System.exit(0);
+			}
 			line += "\n";
+			this.writer.write(line);
 			line ="";
+
+			currentTalker = currentTalker==Talker.Drogba? Talker.Anka:Talker.Drogba;
+
+
+
 		}
+
 
 
 	}
