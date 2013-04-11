@@ -33,10 +33,17 @@ Chapter 6
 ###Notes:
 Generics where introduces in Java to ensure type safety.
 
-Bounded wildcards, ``<? extends X>``, makes sure that every type ``?`` must extend ``X``. This works with ``super`` as well,``<? super X>``, where ``?`` is a super class of ``X``.
+Bounded wildcards, ``<? extends X>``, makes sure that every type ``?`` must extend ``X``. This works with ``super`` as well,``<? super X>``, where ``?`` is a super class of ``X``. It is possible to specify multiple base types ``<? super X & Y>``.
 
 It is not possible to have generic extension classes.
 
+The static method Array.binarySearch(Object []) must be called on an already sorted array to get the desired results.
 
 ###Code:
 * Implemented a navigableMap example. 
+
+Chapter 7
+-------------
+###Notes:
+To escape characters in regular expressions append ``\`` but to escape characters in ``printf()`` statements use ``%``.
+

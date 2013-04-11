@@ -1,6 +1,6 @@
 package com.blmstrm.ocjp2.cupboard;
-import com.blmstrm.ocjp2.KitchenWare;
 import com.blmstrm.ocjp2.plates.Plate;
+import com.blmstrm.ocjp2.utensils.KitchenWare;
 import com.google.code.morphia.annotations.Entity;
 import com.google.code.morphia.annotations.Id;
 

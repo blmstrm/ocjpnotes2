@@ -2,7 +2,7 @@ package com.blmstrm.ocjp2.cupboard;
 
 import java.net.UnknownHostException;
 
-import com.blmstrm.ocjp2.KitchenWare;
+import com.blmstrm.ocjp2.utensils.KitchenWare;
 import com.google.code.morphia.Datastore;
 import com.google.code.morphia.Morphia;
 import com.mongodb.Mongo;

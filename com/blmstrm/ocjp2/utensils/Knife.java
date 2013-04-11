@@ -1,6 +1,5 @@
 package com.blmstrm.ocjp2.utensils;
 
-import com.blmstrm.ocjp2.KitchenWare;
 
 public class Knife extends Utensil implements KitchenWare{
 

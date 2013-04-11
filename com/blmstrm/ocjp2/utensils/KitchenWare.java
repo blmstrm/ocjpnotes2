@@ -1,4 +1,4 @@
-package com.blmstrm.ocjp2;
+package com.blmstrm.ocjp2.utensils;
 
 import com.google.code.morphia.annotations.Embedded;
 

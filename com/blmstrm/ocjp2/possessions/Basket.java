@@ -1,9 +1,12 @@
-package com.blmstrm.ocjp2;
+package com.blmstrm.ocjp2.possessions;
 
 
 import java.util.ArrayList;
 import java.util.NavigableMap;
 import java.util.TreeMap;
+
+import com.blmstrm.ocjp2.utensils.KitchenWare;
+
 
 
 public class Basket{

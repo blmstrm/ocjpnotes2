@@ -2,8 +2,8 @@ package com.blmstrm.ocjp2.plates;
 
 import java.util.Calendar;
 
-import com.blmstrm.ocjp2.KitchenWare;
 import com.blmstrm.ocjp2.meals.Meal;
+import com.blmstrm.ocjp2.utensils.KitchenWare;
 import com.google.code.morphia.annotations.Embedded;
 
 @Embedded
