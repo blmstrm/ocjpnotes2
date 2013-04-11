@@ -14,7 +14,7 @@ public class Camera {
 	
 	@Override
 	protected void finalize() throws Throwable{
-		/*Serialize photos*/
+		/*Serialize photos to photos*/
 	}
 	
 }

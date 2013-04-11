@@ -7,11 +7,12 @@ public class PhotoAlbum {
 	ArrayList <Photo> photos = new ArrayList<>();
 	
 	{
-		/*deserialize photos*/
+		/*deserialize photos from photos*/
 	}
 	
 	public void flipTrough(){
-		/*Barf pictures*/
+		for(Photo p : photos){
+			System.out.println(p);
+		}
 	}
-	
 }

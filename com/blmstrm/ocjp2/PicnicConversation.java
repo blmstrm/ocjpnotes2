@@ -3,7 +3,7 @@ package com.blmstrm.ocjp2;
 public class PicnicConversation {
 
 	{
-		/*Open file*/
+		/*Open file conversation*/
 	}
 	
 	public static void main(String args[]){
@@ -19,8 +19,7 @@ public class PicnicConversation {
 
 	@Override
 	protected void finalize() throws Throwable{
-		/*Append text to file*/
-	
+		/*Append text to file conversation*/
 	}
 	
 }
