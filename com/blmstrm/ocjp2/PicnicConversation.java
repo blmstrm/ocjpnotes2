@@ -2,15 +2,25 @@ package com.blmstrm.ocjp2;
 
 public class PicnicConversation {
 
-	public static void main(String args[]){
-		
+	{
+		/*Open file*/
 	}
 	
-	/* If earlier conversation exists read from file and display before starting conversation again.
-	 * Byte streams.*/
-	/*Swith between Drogba and Anka conversation
-	 * Let user input each line.
-	 * 
-	 */
+	public static void main(String args[]){
+	
+		continueConversation();
+		
+	}
+		
+	private static void continueConversation() {
+	/*Start prompt wait for input*/	
+	
+	}
+
+	@Override
+	protected void finalize() throws Throwable{
+		/*Append text to file*/
+	
+	}
 	
 }
