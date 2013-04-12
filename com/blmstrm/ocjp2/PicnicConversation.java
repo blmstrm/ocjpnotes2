@@ -19,34 +19,37 @@ public class PicnicConversation {
 	private Console console;
 	private BufferedWriter writer;
 	private BufferedReader reader;
-	
-	
+
+
 	{
 
 		String replay = "";
 		String lastLine= "";
 		this.console = System.console();
-
+		this.currentTalker = Talker.Anka;
+		
 		try {
 			if(new File("conversation").exists()){
 				this.reader = new BufferedReader(new FileReader("conversation"));
+
+				while((replay = this.reader.readLine())!= null){
+					console.printf(replay+"\n");
+					lastLine = replay;
+				}
+
+				if(lastLine.startsWith("Drogba: ")){
+					this.currentTalker= Talker.Anka;
+				}else{
+					this.currentTalker = Talker.Drogba;
+				}
 			}
-			
-			while((replay = this.reader.readLine())!= null){
-				console.printf(replay+"\n");
-				lastLine = replay;
-			}
-			
-			if(lastLine.startsWith("Drogba: ")){
-				this.currentTalker= Talker.Anka;
-			}else{
-				this.currentTalker = Talker.Drogba;
-			}
-			
+
+
 		} catch (IOException e) {
 			System.out.println("It started raining. No conversation today.");
 			System.exit(1);
 		}
+		
 		try {
 			this.writer = new BufferedWriter(new FileWriter("conversation",true));
 		} catch (IOException e) {
