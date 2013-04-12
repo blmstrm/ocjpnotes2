@@ -29,10 +29,8 @@ public class Photo implements Serializable {
 			returnString += "The photo contains a ";
 			for(Object s : photoObjects){
 				returnString +=s;
-				if(c == size-1){
-					returnString +="and a ";
-				}else{
-					returnString +=", ";
+				if(c!= size -1){
+					returnString +=" and a ";
 				}
 				c++;
 			}

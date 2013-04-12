@@ -6,6 +6,7 @@ import com.blmstrm.ocjp2.plates.Plate;
 import com.blmstrm.ocjp2.possessions.Basket;
 import com.blmstrm.ocjp2.possessions.Camera;
 import com.blmstrm.ocjp2.possessions.Photo;
+import com.blmstrm.ocjp2.possessions.PhotoAlbum;
 import com.blmstrm.ocjp2.utensils.Fork;
 import com.blmstrm.ocjp2.utensils.KitchenWare;
 import com.blmstrm.ocjp2.utensils.Knife;
@@ -60,11 +61,15 @@ public class TestMealFactory {
 		
 		Camera camera = new Camera();
 		Photo foodPhoto= new Photo();
-		
+
 		foodPhoto.addObject(fork);
 		foodPhoto.addObject(knife);
 		
 		camera.snapAPhoto(foodPhoto);
+		
+		PhotoAlbum album = new PhotoAlbum();
+		album.flipTrough();
+		
 		
 	}
 }

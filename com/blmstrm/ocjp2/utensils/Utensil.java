@@ -1,10 +1,16 @@
 package com.blmstrm.ocjp2.utensils;
 
+import java.io.Serializable;
+
 import com.google.code.morphia.annotations.Embedded;
 
 @Embedded
-public abstract class Utensil{
+public abstract class Utensil implements Serializable{
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private String brand = "";
 	private boolean dirty;
 
@@ -25,7 +31,7 @@ public abstract class Utensil{
 	}
 
 	public String toString(){
-		return "This is a utensil from "+this.brand;
+		return "utensil from "+this.brand;
 	}
 	
 }
