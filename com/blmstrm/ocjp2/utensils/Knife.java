@@ -1,7 +1,14 @@
 package com.blmstrm.ocjp2.utensils;
 
+import java.io.Serializable;
 
-public class Knife extends Utensil implements KitchenWare{
+
+public class Knife extends Utensil implements KitchenWare, Serializable{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 
 	@Override
 	public void use() {

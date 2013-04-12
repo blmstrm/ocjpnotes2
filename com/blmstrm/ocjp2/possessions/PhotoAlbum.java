@@ -1,6 +1,7 @@
-package com.blmstrm.ocjp2;
+package com.blmstrm.ocjp2.possessions;
 
 import java.util.ArrayList;
+
 
 public class PhotoAlbum {
 

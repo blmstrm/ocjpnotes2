@@ -4,6 +4,8 @@ import com.blmstrm.ocjp2.meals.Meal;
 import com.blmstrm.ocjp2.meals.MealFactory;
 import com.blmstrm.ocjp2.plates.Plate;
 import com.blmstrm.ocjp2.possessions.Basket;
+import com.blmstrm.ocjp2.possessions.Camera;
+import com.blmstrm.ocjp2.possessions.Photo;
 import com.blmstrm.ocjp2.utensils.Fork;
 import com.blmstrm.ocjp2.utensils.KitchenWare;
 import com.blmstrm.ocjp2.utensils.Knife;
@@ -55,5 +57,14 @@ public class TestMealFactory {
 		for(KitchenWare k : picknickBasket.getEveryWareFromTo("K", "L")){
 			System.out.println(k);
 		}
+		
+		Camera camera = new Camera();
+		Photo foodPhoto= new Photo();
+		
+		foodPhoto.addObject(fork);
+		foodPhoto.addObject(knife);
+		
+		camera.snapAPhoto(foodPhoto);
+		
 	}
 }

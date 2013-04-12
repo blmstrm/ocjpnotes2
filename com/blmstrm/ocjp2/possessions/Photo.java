@@ -1,4 +1,4 @@
-package com.blmstrm.ocjp2;
+package com.blmstrm.ocjp2.possessions;
 
 import java.io.Serializable;
 import java.util.ArrayList;

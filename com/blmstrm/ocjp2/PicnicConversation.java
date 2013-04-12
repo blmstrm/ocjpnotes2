@@ -22,7 +22,6 @@ public class PicnicConversation {
 
 
 	{
-
 		String replay = "";
 		String lastLine= "";
 		this.console = System.console();
@@ -56,8 +55,6 @@ public class PicnicConversation {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
-
 	}
 
 	public static void main(String args[]){
