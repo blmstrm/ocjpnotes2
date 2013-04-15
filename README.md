@@ -47,3 +47,29 @@ Chapter 7
 ###Notes:
 To escape characters in regular expressions append ``\`` but to escape characters in ``printf()`` statements use ``%``.
 
+###Code:
+No code.
+
+Chapter 8
+-------------
+###Notes:
+No notes.
+
+###Code:
+Added code that writes to text files and code that serializes objects to binary files.
+
+Chapter 9
+-------------
+###Notes:
+No notes.
+
+###Code:
+No code.
+
+Chapter 10
+-------------
+###Notes:
+Column indexes in a SQL databases starts with 1 and not 0.
+
+###Code:
+No code.

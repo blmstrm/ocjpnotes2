@@ -8,6 +8,8 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
+import com.blmstrm.ocjp2.weather.WeatherReporter;
+
 public class PicnicConversation {
 
 	private Talker currentTalker;
@@ -19,6 +21,7 @@ public class PicnicConversation {
 	private Console console;
 	private BufferedWriter writer;
 	private BufferedReader reader;
+	private WeatherReporter weather;
 
 
 	{
@@ -26,7 +29,7 @@ public class PicnicConversation {
 		String lastLine= "";
 		this.console = System.console();
 		this.currentTalker = Talker.Anka;
-		
+
 		try {
 			if(new File("conversation").exists()){
 				this.reader = new BufferedReader(new FileReader("conversation"));
@@ -48,13 +51,16 @@ public class PicnicConversation {
 			System.out.println("It started raining. No conversation today.");
 			System.exit(1);
 		}
-		
+
 		try {
 			this.writer = new BufferedWriter(new FileWriter("conversation",true));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
+		weather = new WeatherReporter();
+		
 	}
 
 	public static void main(String args[]){
@@ -90,6 +96,11 @@ public class PicnicConversation {
 				writer.close();
 				System.exit(0);
 			}
+
+			if(line.compareTo(currentTalker+": Undrar vad det blir för väder?")==0){
+				System.out.println("Weather report.");
+			}
+
 			line += "\n";
 			this.writer.append(line);
 			line ="";

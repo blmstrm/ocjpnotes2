@@ -4,5 +4,6 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="mongo-2.10.1.jar" sourcepath="/home/kalle/.m2/repository/org/mongodb/mongo-java-driver/2.10.1/mongo-java-driver-2.10.1-sources.jar"/>
 	<classpathentry kind="lib" path="morphia-0.98.jar"/>
+	<classpathentry kind="lib" path="mysql-connector-java-5.1.24-bin.jar"/>
 	<classpathentry kind="output" path=""/>
 </classpath>
