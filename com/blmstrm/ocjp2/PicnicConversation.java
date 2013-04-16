@@ -92,13 +92,13 @@ public class PicnicConversation {
 
 			line += console.readLine();
 
-			if(line.compareTo(currentTalker+": \\exit")==0){
+			if(line.compareTo(currentTalker+": Jag måste sticka!")==0){
 				writer.close();
 				System.exit(0);
 			}
 
 			if(line.compareTo(currentTalker+": Undrar vad det blir för väder?")==0){
-				System.out.println("Weather report.");
+				System.out.println(weather.getWeather());
 			}
 
 			line += "\n";
