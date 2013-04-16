@@ -12,7 +12,8 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.Calendar;
 
-
+/*Class uses the linux weather command, 
+ thus this needs to be present on the system in question.*/
 public class WeatherReporter {
 	
 	private String dayOfWeek;

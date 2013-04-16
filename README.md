@@ -72,4 +72,4 @@ Chapter 10
 Column indexes in a SQL databases starts with 1 and not 0.
 
 ###Code:
-No code.
+Added code for weather database connection. Execution of OS processes and retrieve output.
